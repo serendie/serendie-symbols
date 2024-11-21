@@ -30,9 +30,9 @@ export function App() {
       <div style={{ marginTop: "2rem" }}>
         <h3>Different Colors</h3>
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-          <Symbol name="lock" style={{ color: "red" }} />
-          <Symbol name="home" style={{ color: "blue" }} />
-          <Symbol name="home" style={{ color: "green" }} />
+          <Symbol name="lock" color="red" />
+          <Symbol name="home" color="blue" />
+          <Symbol name="home" color="green" />
         </div>
       </div>
     </div>

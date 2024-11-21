@@ -5,14 +5,16 @@
 ```tsx
 import { Symbol } from "@serendie/symbols";
 
-<Symbol name="home" size={24} variant="filled" />;
+<Symbol name="home" size={24} variant="filled" color="red" />;
 ```
 
 ## Props
 
 - `name`: アイコンの名前、[symbolNames.ts](./src/generated/symbolNames.ts)を参照
-- `size`: アイコンのサイズ、SVGのwidthとheightに適用される
-- `variant`: アイコンのバリアント、`outlined`か`filled`
+- `variant?`: アイコンのバリアント、`outlined`か`filled`
+- `size?`: アイコンのサイズ、SVG の width と height に適用される
+- `color?`: アイコンの色、SVG の color 属性に適用される
+- その他の SVG のプロパティはコンポーネントを包括している SVG 要素に適用される
 
 ## scripts/generateSymbolNames.js
 
