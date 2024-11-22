@@ -3,9 +3,9 @@
 ## Usage
 
 ```tsx
-import { Symbol } from "@serendie/symbols";
+import { SerendieSymbol } from "@serendie/symbols";
 
-<Symbol name="home" size={24} variant="filled" color="red" />;
+<SerendieSymbol name="home" size={24} variant="filled" color="red" />;
 ```
 
 ## Props
