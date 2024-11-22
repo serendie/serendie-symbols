@@ -19,7 +19,7 @@ interface SymbolProps extends ComponentPropsWithoutRef<"svg"> {
   variant?: SymbolVariant;
 }
 
-export const Symbol = ({
+export const SerendieSymbol = ({
   name,
   variant = "outlined",
   size = 24,
