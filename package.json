@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "vite",
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
-    "prebuild": "npm run generate-symbol-names",
+    "prebuild": "npm install && npm run generate-symbol-names",
     "build": "vite build"
   },
   "dependencies": {
