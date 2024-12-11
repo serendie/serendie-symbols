@@ -10,11 +10,15 @@
   "module": "dist/symbols.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
     "prebuild": "npm install && npm run generate-symbol-names",
-    "build": "vite build"
+    "build": "vite build",
+    "release": "release-it"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -25,6 +29,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
+    "release-it": "^17.10.0",
     "typescript": "~5.6.2",
     "vite": "^5.4.10",
     "vite-plugin-dts": "^4.3.0",
