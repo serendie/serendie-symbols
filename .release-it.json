@@ -6,7 +6,8 @@
   },
   "github": {
     "release": true,
-    "releaseName": "${npm.name}@${version}"
+    "releaseName": "${npm.name}@${version}",
+    "autoGenerate": true
   },
   "hooks": {
     "after:bump": "npm run build"
