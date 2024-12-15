@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Setup .npmrc
+        run: cp ./.npmrc.example ./.npmrc
       - run: npm ci
       - name: Release
         run: npm run release --ci --increment ${{ github.event.inputs.increment }}
