@@ -42,3 +42,7 @@ import { SerendieSymbol } from "@serendie/symbols";
 - `assets/outlined`と`assets/filled`にあるアイコンの名前を生成するスクリプト
 - ビルド時に実行され`src/generated/symbolNames.ts`を更新します
 - `npm run generate-symbol-names`で手動実行することもできます
+
+## License
+
+MITライセンスの下で配布されています。 詳しくは[LICENSE](/LICENSE)を参照してください。
