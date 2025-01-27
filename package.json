@@ -1,6 +1,6 @@
 {
   "name": "@serendie/symbols",
-  "description": "Symbols for Serendie",
+  "description": "300+ SVG icons as part of Serendie Design System by Mitsubishi Electric",
   "version": "0.0.10",
   "type": "module",
   "files": [
