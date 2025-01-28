@@ -10,9 +10,6 @@
   "module": "dist/symbols.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "dev": "vite",
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
