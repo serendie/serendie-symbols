@@ -6,7 +6,7 @@
 
 <div align='center'>
   
-[![GitHub](https://img.shields.io/github/license/serendie/serendie?style=flat)](https://github.com/serendie/serendie/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/github/license/serendie/serendie-symbols?style=flat)](https://github.com/serendie/serendie-symbols/blob/main/LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/%40serendie%2Fsymbols)](https://www.npmjs.com/package/@serendie/symbols)
 [![X](https://img.shields.io/twitter/follow/SerendieDesign)](https://x.com/SerendieDesign/)
 
