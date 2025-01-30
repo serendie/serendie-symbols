@@ -1,5 +1,8 @@
 <p align='center'>
-<img src='https://github.com/user-attachments/assets/aa713d23-bd6f-4ed1-8fbb-b720c7bdbdbd' width='600px'/>
+  <picture>
+    <source srcset='https://github.com/user-attachments/assets/32affc17-886d-4306-8223-31b793e33e82' media="(prefers-color-scheme: dark)" width='600px'/>
+    <img src='https://github.com/user-attachments/assets/0dbd3005-c4a6-4a0e-8133-8ff5a3018380' alt="Serendie Symbols" title="Serendie Symbols" width='600px'/>
+  </picture>
 </p>
 
 <h1 align='center'>Serendie Symbols</h1>
