@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       increment:
-        description: 'Increment'
+        description: "Increment"
         required: true
-        default: 'patch'
+        default: "patch"
         type: choice
         options:
           - major
@@ -35,4 +35,4 @@ jobs:
       - name: Release
         run: npm run release --ci --increment ${{ github.event.inputs.increment }}
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
