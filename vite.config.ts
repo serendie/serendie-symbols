@@ -33,7 +33,7 @@ export default defineConfig(({ command }) => {
           formats: ["es"],
         },
         rollupOptions: {
-          external: ["react", "react-dom"],
+          external: ["react", "react-dom", "react/jsx-runtime"],
           output: {
             preserveModules: true,
             preserveModulesRoot: "src",
