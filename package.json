@@ -1,7 +1,7 @@
 {
   "name": "@serendie/symbols",
   "description": "300+ SVG icons as part of Serendie Design System by Mitsubishi Electric",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "type": "module",
   "files": [
@@ -11,9 +11,6 @@
   "module": "dist/symbols.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "dev": "vite",
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
