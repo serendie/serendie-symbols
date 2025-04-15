@@ -1,4 +1,4 @@
-// This file is auto-generated. Do not edit manually 
+// This file is auto-generated. Do not edit manually
 export { default as SerendieSymbolActivity } from "./../../assets/outlined/activity.svg?react";
 export { default as SerendieSymbolAirplay } from "./../../assets/outlined/airplay.svg?react";
 export { default as SerendieSymbolAlertCircle } from "./../../assets/outlined/alert-circle.svg?react";
@@ -303,7 +303,8 @@ export { default as SerendieSymbolWatch } from "./../../assets/outlined/watch.sv
 export { default as SerendieSymbolWifiOff } from "./../../assets/outlined/wifi-off.svg?react";
 export { default as SerendieSymbolWifi } from "./../../assets/outlined/wifi.svg?react";
 export { default as SerendieSymbolZoomIn } from "./../../assets/outlined/zoom-in.svg?react";
-export { default as SerendieSymbolZoomOut } from "./../../assets/outlined/zoom-out.svg?react";export { default as SerendieSymbolActivityFilled } from "./../../assets/filled/activity.svg?react";
+export { default as SerendieSymbolZoomOut } from "./../../assets/outlined/zoom-out.svg?react";
+export { default as SerendieSymbolActivityFilled } from "./../../assets/filled/activity.svg?react";
 export { default as SerendieSymbolAirplayFilled } from "./../../assets/filled/airplay.svg?react";
 export { default as SerendieSymbolAlertCircleFilled } from "./../../assets/filled/alert-circle.svg?react";
 export { default as SerendieSymbolAlertOctagonFilled } from "./../../assets/filled/alert-octagon.svg?react";
