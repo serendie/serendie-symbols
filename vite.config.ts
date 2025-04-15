@@ -36,7 +36,6 @@ export default defineConfig(({ command }) => {
           external: ["react", "react-dom", "react/jsx-runtime"],
           output: {
             preserveModules: true,
-            preserveModulesRoot: "src",
           },
         },
       },
