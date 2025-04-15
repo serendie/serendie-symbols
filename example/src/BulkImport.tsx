@@ -1,10 +1,9 @@
-import React from "react";
-import { SerendieSymbol } from "../src";
+import { SerendieSymbol } from "@serendie/symbol";
 
-export function App() {
+export function BulkImport() {
   return (
     <div style={{ padding: "2rem" }}>
-      <h1>Symbol Examples</h1>
+      <h1>Bulk Import</h1>
 
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
         <div>
@@ -23,7 +22,7 @@ export function App() {
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
           <SerendieSymbol name="home" size={16} />
           <SerendieSymbol name="home" size={24} />
-          <SerendieSymbol name="home" size={32} />
+          <SerendieSymbol name="home" size={32} color="red" />
         </div>
       </div>
 
