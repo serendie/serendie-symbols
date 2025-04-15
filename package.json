@@ -14,7 +14,8 @@
   "scripts": {
     "dev": "vite",
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
-    "prebuild": "npm install && npm run generate-symbol-names",
+    "generate-export-symbols": "node scripts/generateExporter.js",
+    "generate": "npm run generate-symbol-names && npm run generate-export-symbols",
     "build": "vite build",
     "release": "release-it"
   },
