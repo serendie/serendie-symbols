@@ -25,9 +25,9 @@ Serendie Symbols は、デジタルプロダクトのなかで汎用性高く使
 
 Serendie Symbols は React 環境を前提としています。
 
-### 基本的な使い方 (推奨: 個別コンポーネントのインポート)
+### 基本的な使い方
 
-各アイコンを個別のコンポーネントとしてインポートする方法です。この方法が推奨されます。
+各アイコンを個別のコンポーネントとしてインポートする方法です。バンドルサイズの観点から **この方法が推奨** されます。
 
 ```tsx
 import {
@@ -47,14 +47,14 @@ function MyComponent() {
 
 **利用可能なコンポーネント:**
 
-- アイコン名 (`home`, `settings` など) をパスカルケース (`Home`, `Settings`) に変換し、プレフィックス `SerendieSymbol` を付けたものがコンポーネント名になります (`SerendieSymbolHome`, `SerendieSymbolSettings`)。
-- 塗りつぶし (`filled`) バリアントの場合は、さらにサフィックス `Filled` が付きます (`SerendieSymbolHomeFilled`, `SerendieSymbolSettingsFilled`)。
-- 利用可能なアイコン名の一覧は[こちら](https://serendie.design/foundations/icon-list/)を参照してください。
-- コンポーネントは標準の SVG プロパティ (`className`, `onClick` など) を受け付けます。
+- アイコン名 (`home` など) をパスカルケース (`Home`) に変換し、プレフィックス `SerendieSymbol` を付けたものがコンポーネント名になります (`SerendieSymbolHome`)
+- 塗りつぶし (`filled`) の場合は、さらにサフィックス `Filled` が付きます (`SerendieSymbolHomeFilled`)
+- 利用可能なアイコン名の一覧は[こちら](https://serendie.design/foundations/icon-list/)を参照してください
+- コンポーネントは標準の SVG プロパティ (`className`, `onClick` など) を受け付けます
 
-### 代替: 動的読み込みコンポーネント
+### 動的読み込みコンポーネント `SerendieSymbol`
 
-単一の `SerendieSymbol` コンポーネントを使用して、`name` や `variant` プロパティによって表示するアイコンを切り替える方法も提供しています。
+`SerendieSymbol` コンポーネントを使用して、`name` や `variant` プロパティによって表示するアイコンを切り替える方法も提供しています。
 
 ```tsx
 import { SerendieSymbol } from "@serendie/symbols";
@@ -64,13 +64,13 @@ import { SerendieSymbol } from "@serendie/symbols";
 
 **利点:**
 
-- **動的なアイコン選択:** コンポーネントのプロパティ (`name`, `variant`) を変更することで、表示するアイコンを実行時に簡単に切り替えられます。
+- **動的なアイコン選択:** コンポーネントのプロパティ (`name`, `variant`) を変更することで、表示するアイコンを実行時に簡単に切り替えられます
 
 **トレードオフと注意点:**
 
-- **バンドルサイズの増加:** このコンポーネントを使用する場合、内部的にすべてのアイコンデータを保持しているため、アプリケーションの最終的なバンドルサイズが大きくなります。実際に使用しないアイコンも含まれてしまいます。
+- **バンドルサイズの増加:** このコンポーネントを使用する場合、内部的にすべてのアイコンデータを保持しているため、アプリケーションの最終的なバンドルサイズが大きくなります。実際に使用しないアイコンも含まれてしまいます
 
-## 動的読み込みコンポーネント (`SerendieSymbol`) の Props
+**`SerendieSymbol`の Props:**
 
 - `name`: アイコン名を指定します。[こちらの一覧](https://serendie.design/foundations/icon-list/)を参照してください。
 - `variant?`: アイコンには線`outlined`と塗り`filled`の 2 種類があります。デフォルトは`outlined`です。
