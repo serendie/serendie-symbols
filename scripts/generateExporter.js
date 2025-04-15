@@ -41,13 +41,13 @@ function PascalCase(str) {
   return str.replace(/(?:^|[-_])(\w)/g, (_, char) => char.toUpperCase());
 }
 
-let content = `// This file is auto-generated. Do not edit manually \n`;
-content += generateExportSymbols(
-  getSvgFilesData(path.join(FILES_ROOT, "outlined"))
-);
-content += generateExportSymbols(
-  getSvgFilesData(path.join(FILES_ROOT, "filled")),
-  "Filled"
-);
+const content = [
+  `// This file is auto-generated. Do not edit manually`,
+  generateExportSymbols(getSvgFilesData(path.join(FILES_ROOT, "outlined"))),
+  generateExportSymbols(
+    getSvgFilesData(path.join(FILES_ROOT, "filled")),
+    "Filled"
+  ),
+].join("\n");
 
 fs.writeFileSync(OUTPUT_FILE, content);
