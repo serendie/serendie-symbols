@@ -45,10 +45,6 @@ function MyComponent() {
 }
 ```
 
-**利点:**
-
-- **バンドルサイズの最適化:** アプリケーションで使用しているアイコンのみが最終的なバンドルに含まれるため、Tree Shaking が最も効果的に機能します。
-
 **利用可能なコンポーネント:**
 
 - アイコン名 (`home`, `settings` など) をパスカルケース (`Home`, `Settings`) に変換し、プレフィックス `SerendieSymbol` を付けたものがコンポーネント名になります (`SerendieSymbolHome`, `SerendieSymbolSettings`)。
@@ -73,7 +69,6 @@ import { SerendieSymbol } from "@serendie/symbols";
 **トレードオフと注意点:**
 
 - **バンドルサイズの増加:** このコンポーネントを使用する場合、内部的にすべてのアイコンデータを保持しているため、アプリケーションの最終的なバンドルサイズが大きくなります。実際に使用しないアイコンも含まれてしまいます。
-- **Tree Shaking の非適用:** バンドラーはビルド時にどのアイコンが必要か判断できないため、このコンポーネントとそれに含まれるすべてのアイコンは Tree Shaking の対象外となります。
 
 ## 動的読み込みコンポーネント (`SerendieSymbol`) の Props
 
