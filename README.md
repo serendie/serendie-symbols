@@ -38,8 +38,8 @@ import {
 function MyComponent() {
   return (
     <>
-      <SerendieSymbolHome size={24} color="green" />
-      <SerendieSymbolSettingsFilled size={32} />
+      <SerendieSymbolHome width={24} height={24} color="green" />
+      <SerendieSymbolSettingsFilled width={32} height={32} />
     </>
   );
 }
