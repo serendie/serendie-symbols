@@ -3,7 +3,7 @@ import { SerendieSymbolHome, SerendieSymbolHomeFilled } from "@serendie/symbol";
 export function PartialImport() {
   return (
     <div style={{ padding: "2rem" }}>
-      <h1>Bulk Import</h1>
+      <h1>Partial Import</h1>
 
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
         <div>
