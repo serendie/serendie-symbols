@@ -16,7 +16,7 @@
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
     "generate-export-symbols": "node scripts/generateExporter.js",
     "generate": "npm run generate-symbol-names && npm run generate-export-symbols",
-    "build": "vite build",
+    "build": "npm run generate && vite build",
     "release": "release-it"
   },
   "dependencies": {
