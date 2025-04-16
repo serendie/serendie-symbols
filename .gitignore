@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 .npmrc
+
+
+# generated files
+src/generated/*
+!src/generated/.gitkeep
