@@ -14,8 +14,9 @@
   "scripts": {
     "dev": "vite",
     "generate-symbol-names": "node scripts/generateSymbolNames.js",
-    "generate-export-symbols": "node scripts/generateExporter.js",
-    "generate": "npm run generate-symbol-names && npm run generate-export-symbols",
+    "replace-components-index": "node scripts/replaceComponentsIndex.js",
+    "generate:tsx": "rimraf src/generated/components && svgr ./assets/outlined --out-dir ./src/generated/components/outlined --typescript && svgr ./assets/filled --out-dir ./src/generated/components/filled --typescript",
+    "generate": "npm run generate-symbol-names && npm run generate:tsx && npm run replace-components-index",
     "build": "vite build",
     "release": "release-it"
   },
@@ -24,11 +25,13 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@svgr/cli": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
     "release-it": "^17.10.0",
+    "rimraf": "^6.0.1",
     "typescript": "~5.6.2",
     "vite": "^5.4.10",
     "vite-plugin-dts": "^4.3.0",

@@ -1,0 +1,9 @@
+{
+  "ext": "tsx",
+  "icon": 24,
+  "jsxRuntime": "automatic",
+  "replaceAttrValues": {
+    "#000": "currentColor"
+  },
+  "filenameCase": "pascal"
+}
