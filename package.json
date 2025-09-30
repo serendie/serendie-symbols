@@ -19,9 +19,9 @@
     "build": "npm run generate && vite build",
     "release": "release-it"
   },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+  "peerDependencies": {
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || ^19.0.0"
   },
   "devDependencies": {
     "@svgr/plugin-svgo": "^8.1.0",
