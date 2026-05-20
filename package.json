@@ -3,6 +3,10 @@
   "description": "300+ SVG icons as part of Serendie Design System by Mitsubishi Electric",
   "version": "1.0.2",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serendie/serendie-symbols"
+  },
   "type": "module",
   "files": [
     "dist"
